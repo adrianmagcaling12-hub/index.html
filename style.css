@@ -1,0 +1,187 @@
+/* ... existing code ... -->
+:root {
+--royal-navy: #0f2557;
+--royal-blue: #1d4ed8;
+--royal-accent: #2563eb;
+--soft-bg: #eff6ff;
+--heading-blue: #1e3a8a;
+--card-radius: 1rem;
+--card-shadow: 0 10px 30px rgba(29, 78, 216, 0.12);
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 35%, #3b82f6 70%, #60a5fa 100%);
+background-attachment: fixed;
+color: #1e293b;
+overflow-x: hidden;
+min-height: 100vh;
+}
+
+/* ==========================================================================
+
+NAVBAR & HERO BANNER
+========================================================================== */
+.portal-navbar {
+background: rgba(15, 37, 87, 0.92);
+backdrop-filter: blur(10px);
+border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.portal-navbar .nav-link {
+color: rgba(255, 255, 255, 0.8);
+font-weight: 500;
+font-size: 0.95rem;
+transition: color 0.2s ease;
+}
+
+.portal-navbar .nav-link:hover,
+.portal-navbar .nav-link.active {
+color: #ffffff;
+}
+
+.portal-hero {
+background: transparent;
+padding: 3.25rem 0 4.5rem 0;
+text-align: center;
+}
+
+.hero-kicker {
+font-size: 0.8rem;
+letter-spacing: 0.18em;
+color: rgba(255, 255, 255, 0.85);
+}
+
+/* ==========================================================================
+2. DASHBOARD CARDS & ICONS
+========================================================================== */
+.dashboard-cards-wrapper {
+margin-top: -2rem;
+}
+
+.portal-card {
+border: none;
+border-radius: var(--card-radius);
+background-color: rgba(255, 255, 255, 0.96);
+backdrop-filter: blur(12px);
+box-shadow: var(--card-shadow);
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portal-card:hover {
+transform: translateY(-3px);
+box-shadow: 0 16px 36px rgba(15, 23, 42, 0.18);
+}
+
+.text-primary-heading {
+color: var(--heading-blue);
+}
+
+.card-icon-badge {
+width: 52px;
+height: 52px;
+border-radius: 1rem;
+background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+color: #1d4ed8;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.4rem;
+box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.card-icon-badge.icon-amber {
+background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+color: #d97706;
+}
+
+/* Student Profile List & Active Pill */
+.profile-info-list li {
+font-size: 0.95rem;
+}
+
+.status-active-badge {
+background-color: #16a34a;
+color: #ffffff;
+font-weight: 600;
+font-size: 0.75rem;
+padding: 0.35em 0.75em;
+border-radius: 0.5rem;
+}
+
+/* Announcements Left Accent Callout */
+.announcement-callout {
+border-left: 3.5px solid #93c5fd;
+padding: 0.4rem 0 0.4rem 1rem;
+background: rgba(248, 250, 252, 0.6);
+border-radius: 0 0.5rem 0.5rem 0;
+transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.announcement-callout:hover {
+border-left-color: var(--royal-blue);
+background-color: #f0f7ff;
+}
+
+/* My Subjects Checklist */
+.subject-checklist li {
+font-size: 0.95rem;
+padding: 0.3rem 0;
+}
+
+/* ==========================================================================
+3. STUDENT REGISTRATION FORM CONTROLS
+========================================================================== */
+.form-control-lg-custom {
+border: 1px solid #cbd5e1;
+border-radius: 0.65rem;
+padding: 0.75rem 1rem;
+font-size: 0.95rem;
+color: #1e293b;
+background-color: #ffffff;
+}
+
+.form-control-lg-custom:focus {
+border-color: var(--royal-blue);
+box-shadow: 0 0 0 0.25rem rgba(29, 78, 216, 0.2);
+}
+
+.btn-submit-custom {
+background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+border: none;
+border-radius: 0.65rem;
+box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
+transition: all 0.2s ease;
+}
+
+.btn-submit-custom:hover {
+background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+transform: translateY(-1px);
+box-shadow: 0 6px 16px rgba(29, 78, 216, 0.4);
+}
+
+.btn-clear-custom {
+border: 1px solid #cbd5e1;
+background-color: #ffffff;
+color: #475569;
+border-radius: 0.65rem;
+}
+
+.btn-clear-custom:hover {
+background-color: #f8fafc;
+color: #1e293b;
+}
+
+section[id],
+div[id] {
+scroll-margin-top: 5.5rem;
+}
+
+footer {
+background: rgba(255, 255, 255, 0.95) !important;
+backdrop-filter: blur(10px);
+}
